@@ -1,2 +1,3 @@
-# CS146-Team9
-Final Website for Group 9's Team Project
+# CS146
+A simple website for a team project in CS146 - Introduction to Web Programming and Project Development
+

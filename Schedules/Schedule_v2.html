@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<script>
+    function UpdateDisplay(is_checked, bkg_color, node_array){
+
+      for (i = 0; i < node_array.length; ++i) {
+          if (is_checked){
+              node_array[i].style.backgroundColor= bkg_color;
+              node_array[i].style.borderStyle = "solid";   
+              if (node_array[i].title.length>0){
+                node_array[i].textContent=node_array[i].title; 
+              }
+              
+          }else{
+              node_array[i].style.backgroundColor= "white";
+              node_array[i].style.borderTopStyle = "solid";
+              node_array[i].style.borderBottomStyle = "solid";
+              node_array[i].style.Color = "black"; 
+              if (node_array[i].textContent.length>0){
+                  node_array[i].title = node_array[i].textContent;
+                  node_array[i].textContent="";
+              }
+              node_array[i].style.height="50px"; 
+          }
+
+      }
+
+    }
+
+    function colorInput(this_color_input) {
+
+      var SubjectLabel = "class"+this_color_input.title;
+      var individual_cell_nodes =  document.querySelectorAll('.'+SubjectLabel); 
+      var bkg_color =  this_color_input.value;  
+      var check_box= document.getElementById("cb"+this_color_input.title);
+
+
+      UpdateDisplay(check_box.checked, 
+                    bkg_color,
+                    individual_cell_nodes);      
+    }
+
+    function checkBox(this_check_box) {
+
+      var SubjectLabel = "class"+this_check_box.title;
+      var individual_cell_nodes =  document.querySelectorAll('.'+SubjectLabel);  
+      var bkg_color= document.getElementById("color"+this_check_box.title).value;
+
+      UpdateDisplay(this_check_box.checked, 
+                    bkg_color,
+                    individual_cell_nodes);      
+    }    
+</script> 
+    
+<style>
+    .row{
+        clear:both;
+    }
+   
+    .box{
+        text-align: center;
+        border: 0.5px solid black;
+        float: left;    
+        height: 50px;       
+        overflow: hidden;   
+        width: 15%;
+    }
+
+    .item{
+        background-color: #E1E0E0;
+        font-weight: bold;
+    }
+    
+    .classMechanics{
+        background-color: #8FF675;
+    }
+    
+    .classCalc{
+        background-color: #8FF675;
+    }
+    
+    .classPython{
+        background-color: #8FF675;
+    }
+   
+   .classWebDev{
+        background-color: #8FF675;
+    }
+   
+   .classEnglish{
+        background-color: #8FF675;
+    }
+   
+   .classQuiz{
+        background-color: #8FF675;
+    }    
+</style>    
+    
+</head>  
+    
+    
+    
+    
+<body>
+<h1>Student Brandon Cao's Schedule</h1>
+<p>
+    <input type="color"    id="colorMechanics" value="#8FF675" title="Mechanics" onchange="colorInput(this)"> 
+    <input type="checkbox" id="cbMechanics" title="Mechanics"  onchange="checkBox(this)" checked>
+    PEP-111 Mechanics  <br>
+    
+    <input type="color" id="colorPython" value="#8FF675" title="Python" onchange="colorInput(this)"> 
+    <input type="checkbox" id="cbPython" title="Python"   onchange="checkBox(this)" checked> CS-115 Intro to Computer Science <br>
+    
+    <input type="color" id="colorCalc" value="#8FF675" title="Calc" onchange="colorInput(this)"> 
+    <input type="checkbox"  title="Calc"   id="cbCalc"  onchange="checkBox(this)" checked> MA-122 Integral Calculus <br>
+    
+    <input type="color" id="colorEnglish" value="#8FF675" title="English" onchange="colorInput(this)"> 
+    <input type="checkbox"  title="English"   id="cbEnglish"  onchange="checkBox(this)" checked> CAL-103 Writing and Communications <br>
+    
+    <input type="color" id="colorWebDev" value="#8FF675" title="WebDev" onchange="colorInput(this)"> 
+    <input type="checkbox" title="WebDev"   id="cbWebDev"  onchange="checkBox(this)" checked> CS-146 Intro to Web Programming and Web Development <br>
+    
+    <input type="color" id="colorQuiz" value="#8FF675" title="Quiz" onchange="colorInput(this)"> 
+    <input type="checkbox" title="Quiz"   id="cbQuiz"  onchange="checkBox(this)" checked> D-110 Freshman Quiz
+</p>    
+    <div class="row">
+    <div class="box item"></div>  
+    <div class="box item">Monday</div> 
+    <div class="box item">Tuesday</div> 
+    <div class="box item">Wednesday</div> 
+    <div class="box item">Thursday</div> 
+    <div class="box item">Friday</div>
+    </div>
+    
+    <div class="row">
+    <div class="box item">8:00 AM</div>    
+    <div class="box"> </div>    
+    <div class="box classMechanics">PEP-111</div>    
+    <div class="box"> </div>    
+    <div class="box"> </div>    
+    <div class="box"> </div>
+    </div>
+    
+    <div class="row">   
+    <div class="box item">9:00 AM</div> 
+    <div class="box classMechanics">PEP-111</div>  
+    <div class="box classMechanics">PEP-111</div>  
+    <div class="box"> </div>  
+    <div class="box"> </div>  
+    <div class="box classMechanics">PEP-111</div>    
+    </div>
+    
+    <div class="row">        
+    <div class="box item">10:00 AM</div>
+    <div class="box classPython">CS-115</div>    
+    <div class="box"> </div>    
+    <div class="box classPython">CS-115</div>    
+    <div class="box"> </div>    
+    <div class="box classPython">CS-115</div>
+    </div>
+
+    <div class="row">       
+    <div class="box item">11:00 AM</div>
+    <div class="box"> </div>
+    <div class="box classCalc">MA-122</div>
+    <div class="box"> </div>
+    <div class="box classCalc">MA-122</div>
+    <div class="box"> </div>
+    </div>
+
+    <div class="row">
+    <div class="box item">12:00 PM</div>
+    <div class="box classCalc">MA-122</div>
+    <div class="box"> </div>
+    <div class="box classCalc">MA-122</div>
+    <div class="box classPython">CS-115</div>
+    <div class="box classCalc">MA-122</div>
+    </div>
+    
+    <div class="row">       
+    <div class="box item">1:00 PM</div>
+    <div class="box classEnglish">CAL-103</div>
+    <div class="box"> </div>
+    <div class="box classEnglish">CAL-103</div>
+    <div class="box classPython">CS-115</div>
+    <div class="box classEnglish">CAL-103</div>
+    </div>
+
+    <div class="row">        
+    <div class="box item">2:00 PM</div>
+    <div class="box"></div>
+    <div class="box empty"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    </div>
+
+    <div class="row">        
+    <div class="box item">3:00 PM</div>
+    <div class="box"></div>
+    <div class="box empty"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    </div>
+    
+    <div class="row">   
+    <div class="box item">4:00 PM</div>
+    <div class="box"> </div>
+    <div class="box classWebDev">CS-146</div>
+    <div class="box"> </div>
+    <div class="box classWebDev">CS-146</div>
+    <div class="box"> </div>
+    </div>
+
+    <div class="row">
+    <div class="box item">5:00 PM</div>
+    <div class="box classQuiz">D-110</div>
+    <div class="box classWebDev">CS-146</div>
+    <div class="box classQuiz">D-110</div>
+    <div class="box classWebDev">CS-146</div>
+    <div class="box"> </div>
+    
+    <div class="row">        
+    <div class="box item">6:00 PM</div>
+    <div class="box"></div>
+    <div class="box empty"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    </div>
+            
+</body>        
+</html>

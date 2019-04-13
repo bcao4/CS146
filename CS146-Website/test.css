@@ -1,0 +1,440 @@
+@media only screen and (min-width: 900px) {
+.picture { 
+	max-width: 80%;
+	max-height: 40%;
+}
+
+body {
+    
+	background-image: url("bg.jpg");
+    
+	background-repeat: no-repeat;
+    
+	font-family: Georgia, serif;
+	
+	-webkit-background-size: cover;
+  	
+	-moz-background-size: cover;
+  	
+	-o-background-size: cover;
+  	
+	background-size: cover;
+  	
+	top:0;
+  	
+	left:0;
+
+	font-family: Trebuchet MS;
+}
+
+
+h2 {
+	font-size: 45px
+}
+
+li {
+	Trebuchet MS;
+	font-size: 20px;
+
+}
+
+.text {
+	font-family: Trebuchet MS;
+	font-size: 30px;
+}
+
+#title {
+	font-size: 72px;
+	font-family: impact;
+}
+ul {
+    
+	list-style-type: none;
+      
+	padding: 0;
+    
+	overflow: hidden;
+    
+	background-color: #333;
+
+}
+
+
+li a {
+    
+	display: block;
+    
+	color: white;
+      
+	padding: 30px;
+    
+	text-decoration: none;
+    
+
+}
+
+
+
+.navbarF {
+	float: left;
+	width: 33.33%;
+}
+
+
+ul a:hover {
+    
+	background-color: #111;
+
+}
+
+
+p {
+
+
+}
+
+.treebullet:before {
+        font-family: "FontAwesome";
+        content: "\f1bb"; 
+}
+.leaf:before {
+	font-family: "FontAwesome";
+	content: "\f06c";
+}
+
+.footer {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+
+    text-align: center;
+    margin-top: 10px;
+}
+.styleButton {
+	background: green;
+	color: white;
+	border: none;
+	border-radius: 15px;
+}
+
+#donateButton {
+	width: 20%;
+	padding: 30px;
+	font-size: 20px;
+	transition: background 1s ease-out;
+	background-color: #333;
+
+}
+
+#donateButton:hover {
+	background: red;
+}
+
+#formButton {
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.donateForm {
+	margin: 0px auto;
+	width: 520px;
+	font-size: 13px;
+	border: solid grey;
+	font-family: "Verdana";
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.selection {
+
+}
+.selection > p {
+	margin-bottom: 2px;
+	padding: 0px;
+}
+.selection > input {
+	width: 500px;
+	margin: 0 auto;
+	padding: 2px;
+}
+#message {
+	padding-bottom: 50px;
+}
+.boxedwords {
+	width: 17.33%;
+	height: 100px;
+	border: 4px solid green;
+	padding: 10px;
+	float: left;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-family: Trebuchet MS;
+
+}
+
+#formHeader {
+	color: white;
+	margin-top: 20px;
+	text-align: center;
+}
+.donateForm {
+	margin: 0px auto;
+	width: 520px;
+	font-size: 13px;
+	border: solid grey;
+	font-family: "Verdana";
+	padding-left: 10px;
+	padding-bottom: 10px;
+	color: #d9dde2;
+	border: none;
+
+}
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 2px;
+  background-color: #bfb7b7;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active {
+  background-color: #0a0a0a;
+}
+}
+
+
+
+
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) {
+.picture {
+	max-height: 10%;
+	max-width: 95%;
+	border: 1;
+}
+
+.bigtextbox {
+	max-height: auto;
+	max-width: 100%
+}
+
+body {
+    
+	background-image: url("bg.jpg");
+    
+	background-repeat: no-repeat;
+    
+	font-family: Georgia, serif;
+	
+	-webkit-background-size: cover;
+  	
+	-moz-background-size: cover;
+  	
+	-o-background-size: cover;
+  	
+	background-size: cover;
+  	
+	top:0;
+  	
+	left:0;
+
+	font-family: Trebuchet MS;
+}
+
+
+h2 {
+	font-size: 4vw;
+}
+
+li {
+	Trebuchet MS;
+	font-size: 5vw;
+
+}
+
+.text {
+	font-family: Trebuchet MS;
+	font-size: 5vw;
+}
+
+#title {
+	font-size: 12vw;
+	font-family: impact;
+}
+ul {
+    
+	list-style-type: none;
+      
+	padding: 0;
+    
+	overflow: hidden;
+    
+	background-color: #333;
+
+}
+
+
+li a {
+    
+	display: block;
+    
+	color: white;
+      
+	padding: 15px;
+    
+	text-decoration: none;
+    
+
+}
+
+
+
+.navbarF {
+	float: left;
+	width: 33.33%;
+}
+
+
+ul a:hover {
+    
+	background-color: #111;
+
+}
+
+
+p {
+
+
+}
+
+.treebullet:before {
+        font-family: "FontAwesome";
+        content: "\f1bb"; 
+}
+.leaf:before {
+	font-family: "FontAwesome";
+	content: "\f06c";
+}
+
+.footer {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+
+    text-align: center;
+    margin-top: 10px;
+}
+.styleButton {
+	background: green;
+	color: white;
+	border: none;
+	border-radius: 15px;
+}
+
+#donateButton {
+	width: 70%;
+	padding: 30px;
+	font-size: 20px;
+	transition: background 1s ease-out;
+	background-color: #333;
+
+}
+
+#donateButton:hover {
+	background: red;
+}
+
+#formButton {
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.donateForm {
+	margin: 0px auto;
+	width: 520px;
+	font-size: 13px;
+	border: solid grey;
+	font-family: "Verdana";
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.selection {
+
+}
+.selection > p {
+	margin-bottom: 2px;
+	padding: 0px;
+}
+.selection > input {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 2px;
+}
+#message {
+	padding-bottom: 50px;
+}
+.boxedwords {
+	width: 200px;
+	height: 100px;
+	border: 4px solid green;
+	padding: 10px;
+	display: inline-block;
+	font-family: Trebuchet MS;
+
+}
+
+#formHeader {
+	color: white;
+	margin-top: 20px;
+	text-align: center;
+}
+.donateForm {
+	margin: 0px auto;
+	max-width: 100%;
+	font-size: 3vw;
+	border: solid grey;
+	font-family: "Verdana";
+	padding-left: 10px;
+	padding-bottom: 10px;
+	color: #d9dde2;
+	border: none;
+
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 2px;
+  background-color: #bfb7b7;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active {
+  background-color: #0a0a0a;
+}
+}

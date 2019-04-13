@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rainforest Rescue</title>
+	<link rel="stylesheet" href="test.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<script src="js.js"></script>
+	<script>
+		window.onload = showSlides();
+	</script>
+
+</head>
+<a name="top"></a>
+<body>
+	<center>
+	<h1 id="title">Rainforest Rescue</h1>
+	<ul id="navbar">
+		<li class="navbarF"><a href="#how_you_can_help">How You Can Help</a></li>
+		<li class="navbarF"><a href="#quick_facts">Quick Facts</a></li>
+		<li class="navbarF"><a href="#contact_us">Contact Us</a></li>
+	</ul>
+	<p>
+	</p>
+	<div class="slideshow-container">
+
+	<div class="mySlides">
+  	<img class="picture" src="forest.jpg" border='4'>
+	</div>
+
+	<div class="mySlides">
+  	<img class="picture" src="forest2.jpg" border='4'>
+	</div>
+
+	<div class="mySlides">
+  	<img class="picture" src="forest3.jpg" border='4'>
+	</div>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+  	<span class="dot"></span> 
+	</div>
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3500); // Change image every 2 seconds
+}
+</script>
+	
+    	<h2>About Us</h2>
+        <h3>
+        <p class="text">
+        Rainforest Rescue was created by a small group of concerned college students who wanted to make a large scale impact. We hope to not only to inform about the dangers that Earth&#39;s rainforests are facing, but to inspire our readers to make a difference in their own communities as well. 
+        </p>
+	<img class="picture" src="deer.jpg" border='4'>
+        <p class="text"> Even the smallest contribution to our cause goes a long way - all donations to Rainforest Rescue will go right into informational online advertising and the development of an in-person information session to teach students and the community about how they can better care for the world we live in.
+        </p>
+        </h3>
+	<button class="styleButton" id="donateButton" onclick="redirect()">Donate</button> <br><br>
+
+	<a href="#top">Back to Top</a>
+
+	<a name="how_you_can_help"></a>
+    	<h2>How You Can Help</h2>   
+	<p class="text"> There are many ways to get involved in saving our planet! Check out this list of things you can do to help preserve our rainforests for future generations: </p>
+
+		<div class="boxedwords">Volunteer to help plant trees where deforestation has taken place.</div><div class="boxedwords">Support companifes with environmentally-friendly business practices.</div><div class="boxedwords">Educate others about the issues facing our rainforests.</div><div class="boxedwords">Try to live in a way that will not hurt the environment!</div><div class="boxedwords">Contributing to Rainforest Rescue and our efforts!</div> <br><br>
+	
+	<img class="picture" src="moose.jpg" border='4'><br>
+	<a href="#top">Back to Top</a>
+	<a name="quick_facts"></a>
+    	<h2>Quick Rainforest Facts</h2>
+	</center>
+	<ul2>
+        	<li>One and a half acres of forest is cut down every second.</li><br>
+        	<li>Loss of forests contributes between 12 percent and 17 percent of annual global greenhouse gas emissions.</li><br>
+        	<li>If the current rate of deforestation continues, all of the rainforests on Earth will be gone within the next century.</li><br>
+        	<li>20% of the world&#39;s oxygen is produced in the Amazon forest.</li><br>
+        	<li>Studies show that up to 28,000 species are expected to become extinct within the next 25 years due to deforestation.</li><br>
+        	<li>Half of the world&#39;s tropical forests have already been cleared.</li><br>
+        	<li>Soil erosion, floods, wildlife extinction, increase in global warming, and climate imbalance are few of the effects of deforestation.</li><br>
+	</ul2>
+	<center>
+	<a href="#top">Back to Top</a>
+
+	<a name="contact_us"></a>
+    	<h2>Contact Us</h2>
+	<p>
+	<form>
+			
+			<p> Want to contribute thoughts on our mission? Ideas to improve? Let us know! </p>
+			
+			First Name <br>
+			<input type="text" name="firstname" placeholder="Enter Here" style="text-align: center;"> <br> <br> 
+			
+			Last Name <br>
+			<input type="text", name="lastname" placeholder="Enter Here" style="text-align: center;"> <br> <br>
+			
+			Email Address <br>
+			<input type="text", name="email" placeholder="Enter Here" style="text-align: center;"> <br> <br>
+			
+			
+			<p> How informative was Rainforest Rescue's website in your opinion? (In ascending order of usefulness) </p>
+			
+			<input type="radio" name="rating" value="one"> 1
+			<input type="radio" name="rating" value="two"> 2
+			<input type="radio" name="rating" value="three"> 3
+			<input type="radio" name="rating" value="four"> 4
+			<input type="radio" name="rating" value="five"> 5
+		
+			<p> Leave your thoughts below, any feedback is greatly appreciated! </p>
+			
+			<textarea class="bigtextbox" rows="6" cols="60" name="finalthoughts" placeholder="All thoughts are welcome" style="text-align: left;"></textarea> <br> <br>
+				
+			<button type="submit" onclick="printAlert()">Submit </button> <br> <br> 
+	</form>  
+
+	<a href="#top">Back to Top</a>
+	</center>
+	<div class="footer">
+  		<p>&copyRainforestRescue2018<br/>
+  		<a href="https://www.stevens.edu/">Stevens Institute of Technology's Website</a><br/>
+  		<i class="fab fa-facebook" style="font-size:20px;color:blue"></i>@RainforestRescue2018
+  		<i class="fab fa-twitter" style="font-size:20px;color:sky-blue"></i>@RainforestRescue2018
+  		</p>
+	</div>
+</body>
+</html>
+

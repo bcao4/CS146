@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="test.css"/>
+    <title>Donate to Rainforest Rescue</title>
+  </head>
+  <script>
+  	function donatePress() {
+		alert("Thank you for supporting Rainforest Rescue!");
+  	}
+
+  </script>
+  <body>
+	<h1 id="formHeader">Donate to Rainforest Rescue</h1>
+  	<form class="donateForm">
+  		<div class="selection">
+  			<p>FIRST NAME</p>
+  				<input type="text" name="firstname">
+  		</div>
+  		  <div class="selection">
+  			<p>LAST NAME</p>
+  				<input type="text" name="lastname">
+  		</div>
+  		<div class="selection">
+  			<p>EMAIL</p>
+  				<input type="text" name="email">
+  		<div class="selection">
+  			<p>AMOUNT</p>
+  				<input type="number" min="0.01" step="0.01" name="amount">
+  		</div>
+  		<div class="selection">
+  			<p>MESSAGE</p>
+  				<input type="text" name="message" id="message">
+  		</div>
+  	<button class="styleButton" id="formButton" onclick="donatePress()">Send Donation</button>
+
+  		
+  	</form>
+  
+  </body>
+</html>
